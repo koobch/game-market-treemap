@@ -102,7 +102,7 @@ input[type=number]:focus { outline:none; border-color:#3b82f6; }
 <div class="header">
   <h1>글로벌 게임 시장 인터랙티브 트리맵</h1>
   <p class="subtitle">사각형 크기 = 매출 규모 | 색상 = CAGR (초록=성장, 빨강=하락) | 클릭으로 드릴다운</p>
-  <div id="source-badge" class="source-badge"><strong>출처:</strong> Sensor Tower 2021-2025 (iOS+Google Play IAP/중국 제외, 스토어 수수료 ~30% 차감 후 순매출)</div>
+  <div id="source-badge" class="source-badge"><strong>출처:</strong> Sensor Tower 2021-2025 (iOS+Google Play IAP, Google 중국 제외, 스토어 수수료 ~30% 차감 후 순매출)</div>
 </div>
 
 <div class="controls">
@@ -572,7 +572,7 @@ function setPlatform(p) {
   if (p === 'steam') {
     badge.innerHTML = '<strong>출처:</strong> VG Insights / SteamDB 2021-2025 (Steam 플랫폼 한정, 장르별 매출 추정치, 소비자 지출 기준)';
   } else {
-    badge.innerHTML = '<strong>출처:</strong> Sensor Tower 2021-2025 (iOS+Google Play IAP/중국 제외, 스토어 수수료 ~30% 차감 후 순매출)';
+    badge.innerHTML = '<strong>출처:</strong> Sensor Tower 2021-2025 (iOS+Google Play IAP, Google 중국 제외, 스토어 수수료 ~30% 차감 후 순매출)';
   }
   updateButtons(); updateFilters(); render();
 }
